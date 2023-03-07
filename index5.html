@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Jquery Val()</title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="myInput">
+    <button id="myBtn">Klik saya</button>
+
+    <br>
+    <br>
+
+    <input type="text" id="tambah1"> +
+    <input type="text" id="tambah2"> =
+    <input type="text" id="hasil">
+    <button id="tombol">Klik saya</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(() => {
+            $("#myBtn").click(() => {
+                $("#myInput").val("ini value nya")
+            })
+        })
+
+        $(document).ready(() => {
+            $("#tombol").click(() => {
+                let satu = $("#tambah1").val()
+                let dua = $("#tambah2").val()
+                $("#hasil").val(parseInt(satu) + parseInt(dua))
+            })
+        })
+    </script>
+</body>
+
+</html>

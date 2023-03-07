@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementasi CSS ke element via jquery</title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <p id="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, necessitatibus. Animi esse
+        recusandae repellat magnam eos repudiandae deleniti dignissimos, reiciendis deserunt minus tempora, tempore
+        nesciunt libero. Eaque labore earum at?</p>
+
+
+    <button id="myBtnGreen">bg green</button>
+    <button id="myBtnBlue">bg blue</button>
+    <button id="myBtnYellow">bg yellow</button>
+
+    <br><br>
+
+    <img alt="" src="https://avatars.githubusercontent.com/u/115436194?v=4" id="gambar">
+
+    <button id="on">on</button>
+    <button id="off">off</button>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+
+        // empty untuk menghapus teks saja , remove untuk teks dan element
+        $(document).ready(() => {
+            $("#myBtnGreen").click(() => {
+                $("#paragraf").css({ 'background-color': 'green', 'color': 'red', 'font-size': '20px' })
+            })
+            $("#myBtnBlue").click(() => {
+                $("#paragraf").css({ 'background-color': 'blue' })
+            })
+            $("#myBtnYellow").click(() => {
+                $("#paragraf").css({ 'background-color': 'yellow' })
+            })
+
+            $("#on").click(() => {
+                alert("a")
+                $("img").attr("src", "https://api.jquery.com/jquery-wp-content/themes/jquery/content/donate.png");
+
+            })
+            $("#off").click(() => {
+                $("img").attr("src", "https://releases.jquery.com/jquery-wp-content/themes/jquery/images/stackpath.png");
+
+            })
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add class remve class</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .bergaris {
+            border: solid black;
+        }
+
+        .bg {
+            background-color: skyblue;
+        }
+
+        .white-text {
+            color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="paragraf">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero modi magnam deserunt quibusdam saepe
+        minus nihil
+        eaque repellat ullam unde. Veniam eligendi odit nisi. Corporis eos quod facere aut? Dolorum non fugiat unde ea
+        nulla laudantium quaerat consequuntur nihil animi!</p>
+
+    <button id="tambahGaris">Tambah Border</button>
+    <button id="tambahBg">Tambah Background</button>
+    <button id="tambahWarna">Tambah Warna</button>
+    <button id="toggle">Toggle Class</button>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+
+        // empty untuk menghapus teks saja , remove untuk teks dan element
+        $(document).ready(() => {
+            $('#tambahGaris').click(() => {
+                $('#paragraf').addClass('bergaris').toggleClass()
+            })
+            $('#tambahBg').click(() => {
+                $('#paragraf').addClass('bg')
+            })
+            $('#tambahWarna').click(() => {
+                $('#paragraf').addClass('white-text')
+            })
+            $('#toggle').click(() => {
+                $('#paragraf').toggleClass('bergaris bg white-text')
+            })
+        })
+
+    </script>
+</body>
+
+</html>

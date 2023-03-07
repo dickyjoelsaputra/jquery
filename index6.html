@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Jquery Tambah elemen append / prepend</title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h3>Menu Minuman</h3>
+    <ul id="items">
+        <li>Teh</li>
+        <li>Kopi</li>
+    </ul>
+
+    <input type="text" id="myInput">
+    <button id="myBtn">Tambah Menu</button>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(() => {
+            $("#myBtn").click(() => {
+                let data = $("#myInput").val()
+                $("#items").prepend("<li>" + data + "</li>");
+                $('#myInput').val('');
+            })
+        })
+
+    </script>
+</body>
+
+</html>

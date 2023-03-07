@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Jquery Animate</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            position: relative;
+        }
+
+        button {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="anmBtn">Play!</button>
+    <div></div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(() => {
+            $("#anmBtn").click(() => {
+                $("div").animate({ left: "100px", width: "150px", height: "150px" }, 3000, () => {
+                    alert("berhasil animasi elemen")
+                })
+                $("div").animate({ top: "100px", width: "200px", height: "200px" }, 3000)
+            })
+        })
+    </script>
+</body>
+
+</html>

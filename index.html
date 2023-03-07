@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Jquery</title>
+    <style>
+        .kotak{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p id="test">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat rerum accusamus, mollitia fugiat rem sit quo fugit voluptatem, ut quos amet consequuntur quis obcaecati! Obcaecati, rerum inventore possimus dolorum eum dolore dicta ea corporis, vero esse dignissimos sapiente non unde doloremque veniam, quo ullam asperiores blanditiis id ut aliquid nostrum quae perspiciatis ratione! Dolorem, laudantium quaerat, impedit totam iste, veritatis fuga eos consectetur ad voluptatum aperiam consequuntur odit temporibus quo vero illum asperiores animi exercitationem dicta consequatur libero reiciendis nostrum molestias voluptatibus. Facere natus ea voluptates, atque asperiores maxime dolore voluptatibus reiciendis magnam corporis officia, ipsum ut! Incidunt quisquam rerum officiis magnam totam perferendis saepe quas architecto quo, quae quis nisi possimus unde excepturi deserunt labore itaque et veritatis praesentium tenetur eum dolorum! Sed fugit beatae porro ipsa? Nobis cumque magnam unde saepe facere eius. Esse, doloremque a. Delectus enim cum molestias accusantium distinctio dolor reprehenderit esse quod, iusto vel? Dolor quisquam quibusdam tempore aperiam labore maxime eveniet voluptatem veritatis itaque. Laborum cupiditate ipsa suscipit dolore corrupti totam sapiente recusandae quas! Aperiam ipsa perspiciatis laboriosam maxime consectetur laborum rem cumque dolore, dicta odio quia non dolor nesciunt ab rerum fugiat illum repellendus, aliquam aspernatur doloremque corrupti molestias consequatur tempora? Facere?
+    </p> -->
+
+    <div class="kotak">
+    </div>
+
+    <button class="ApaSaja" id="btn">Klik saya</button>
+
+
+    <input type="text" name="" id="myinput">
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        // dengan javascript
+        // document.getElementById("test").style.backgroundColor = "red";
+
+        // dengan jquery
+        // $("#test").css("background-color" , "red")
+
+        // $("#test").append("ini paragraf baru");
+
+        // $(document).ready(alert('hello world'))
+
+        // $(".ApaSaja").click(function(){
+        //     $(".kotak").hide()
+        // })
+        $(document).ready(function(){
+
+            // $(window).resize(function(){
+            //     alert("window diresize")      
+            // })
+            // $(window).scroll(function(){
+            //     alert("window diresize")      
+            // })
+
+            // $("#btn").click(function(){
+            //     alert("button di klick")
+            // })
+            // $("#btn").hover(function(){
+            //     alert("button di klick")
+            // })
+
+            // $("#myinput").keypress(function(){
+            //     alert("keyboard di pencet")
+            // })
+
+            // submit dan focus
+
+            // toggle
+
+            // $(".ApaSaja").click(function(){
+            //     $(".kotak").toggle()
+            // })
+
+
+            //jqeury fadeyin fadeout fadetoggle fadteo
+        $(".ApaSaja").click(function(){
+                // $(".kotak").fadeOut(5000, ()=>{
+                //     alert("test")
+                // })
+            // $(".kotak").fadeToggle(2000, ()=>{
+            //         alert("test")
+            //     })
+            // $(".kotak").fadeTo(speed,opacity,callback)
+            $(".kotak").fadeTo(3000,0.5)
+            
+            })
+        })
+    </script>
+</body>
+</html>

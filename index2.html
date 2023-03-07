@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Jquery</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            background-color: cadetblue;
+            padding: 10px;
+        }
+
+        ol {
+            display: none;
+        }
+
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h2>
+            Menu
+        </h2>
+        <ol>
+            <li>Nasi Goreng</li>
+            <li>Mie Goreng</li>
+            <li>Sate</li>
+            <li>Soto</li>
+        </ol>
+    </div>
+
+    <button id="slide-down">Slide Down</button>
+    <button id="slide-up">Slide Up</button>
+    <button id="slide-toggle">Slide Toggle</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            $("#slide-down").click(() => {
+                $("ol").slideDown()
+            })
+
+            $("#slide-up").click(() => {
+                $("ol").slideUp()
+            })
+
+            $("#slide-toggle").click(() => {
+                $("ol").slideToggle(3000, () => {
+                    alert("test")
+                })
+            })
+        });
+    </script>
+</body>
+
+</html>

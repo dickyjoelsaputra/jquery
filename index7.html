@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery remove and empty</title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="paragraf1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat iste culpa, minima nisi
+        assumenda ex voluptatum. Inventore beatae facere eos, eligendi excepturi corporis repellat voluptatum illum
+        accusamus impedit assumenda, iure reiciendis architecto sequi veritatis odio. Veniam ex ut tempora est nobis
+        quaerat, aspernatur quia similique repellendus voluptatum, esse repellat vel architecto autem obcaecati
+        consectetur laboriosam aut. Nam officia consequuntur dignissimos. Ea exercitationem, eos temporibus officia
+        tenetur culpa consequatur? Consequatur possimus similique, incidunt repellat obcaecati debitis commodi
+        accusantium magni neque quibusdam excepturi vitae ipsa iusto voluptas corporis officia ratione et fugit,
+        necessitatibus natus quis minima fuga dolorem vero. Sint, placeat?</p>
+
+    <p id="paragraf2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat iste culpa, minima nisi
+        assumenda ex voluptatum. Inventore beatae facere eos, eligendi excepturi corporis repellat voluptatum illum
+        accusamus impedit assumenda, iure reiciendis architecto sequi veritatis odio. Veniam ex ut tempora est nobis
+        quaerat, aspernatur quia similique repellendus voluptatum, esse repellat vel architecto autem obcaecati
+        consectetur laboriosam aut. Nam officia consequuntur dignissimos. Ea exercitationem, eos temporibus officia
+        tenetur culpa consequatur? Consequatur possimus similique, incidunt repellat obcaecati debitis commodi
+        accusantium magni neque quibusdam excepturi vitae ipsa iusto voluptas corporis officia ratione et fugit,
+        necessitatibus natus quis minima fuga dolorem vero. Sint, placeat?</p>
+
+    <button id="myBtn">klik saya</button>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <script>
+
+        // empty untuk menghapus teks saja , remove untuk teks dan element
+        $(document).ready(() => {
+            $("#myBtn").click(() => {
+                $("#paragraf2").remove()
+
+            })
+        })
+
+    </script>
+</body>
+
+</html>
